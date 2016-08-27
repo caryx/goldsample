@@ -1,0 +1,6 @@
+C:\Document\source\goldsample\TestHedge\DataServer\bin\Debug\DataServer.exe.config
+C:\Document\source\goldsample\TestHedge\DataServer\bin\Debug\DataServer.exe
+C:\Document\source\goldsample\TestHedge\DataServer\bin\Debug\DataServer.pdb
+C:\Document\source\goldsample\TestHedge\DataServer\obj\Debug\DataServer.csprojResolveAssemblyReference.cache
+C:\Document\source\goldsample\TestHedge\DataServer\obj\Debug\DataServer.exe
+C:\Document\source\goldsample\TestHedge\DataServer\obj\Debug\DataServer.pdb
