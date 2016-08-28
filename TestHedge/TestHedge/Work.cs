@@ -81,8 +81,8 @@ namespace TestHedge
 
             int goodCount = 0;
             int badCount = 0;
-            int testItm = 10;
-            //for (int k = testItm; k <= testItm; ++k)
+            int testItem = 1;
+            //for (int k = testItem; k <= testItem; ++k)
             for (int k = 0; k < codes.Count; ++k)
             {
                 var item = codes[k];
@@ -122,7 +122,8 @@ namespace TestHedge
                     }
                 }
 
-                string outputLine = Utils.Int2Str(item, 6) + "\tWin: " + Utils.Int2Str(winCount, 3) + "\tLose: " + Utils.Int2Str(loseCount, 3) + "\tWin ratio:\t";
+                //string outputLine = Utils.Int2Str(item, 6) + "\tWin: " + Utils.Int2Str(winCount, 3) + "\tLose: " + Utils.Int2Str(loseCount, 3) + "\tWin ratio:\t";
+                string outputLine = (item) + "\tWin: " + Utils.Int2Str(winCount, 3) + "\tLose: " + Utils.Int2Str(loseCount, 3) + "\tWin ratio:\t";
                 string count = "\t" + Utils.Int2Str(k + 1, 4) + "/" + codes.Count;
                 string ratioStr = "0.00%";
                 decimal ratio = 0.00m;
@@ -147,7 +148,10 @@ namespace TestHedge
                 }
             }
 
-            Log.e("good = " + goodCount + " badCount = " + badCount + " ratio = " +  goodCount*1.0m / (goodCount + badCount));
+            if (goodCount + badCount > 0)
+            { 
+                Log.e("good = " + goodCount + " badCount = " + badCount + " ratio = " +  goodCount*1.0m / (goodCount + badCount));
+            }
         }
 
         public void work2()
